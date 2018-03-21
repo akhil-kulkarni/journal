@@ -1,6 +1,6 @@
 <header>
 	<mat-toolbar color="primary" class="mat-elevation-z6 jnl-hdr-wrap">
-		<span class="jnl-header" *ngIf="showHdrLogo">Journal</span>
+		<span class="jnl-header" *ngIf="showHdrLogo" (click)="changeIcnGroupView()">Journal</span>
 		<!-- <span class="example-fill-remaining-space"></span> -->
 		<!-- <span>Right Aligned Text</span> -->
 		<div class="jnl-hdr-search-wrap" *ngIf="showSearchBar">
