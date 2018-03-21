@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Bootstrap Imports */
+@import 'bootstrapscss/_bootstrap-sprockets';
+@import 'bootstrapscss/_bootstrap';
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/* Book */
+@font-face {
+	font-family: 'Pacifico';
+	src: url('../fonts/Pacifico-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

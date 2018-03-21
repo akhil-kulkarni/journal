@@ -1,0 +1,14 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-hdr-icn-grp {
+	display: flex;
+  align-items: center;
+}
+
+.app-hdr-icn-grp i {
+	padding: 0 10px;
+	cursor: pointer;
+}

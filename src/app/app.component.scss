@@ -1,0 +1,38 @@
+
+:host ::ng-deep .app-header {
+	height: 50px;
+	line-height: 50px;
+  text-align: center;
+
+	// background: #0f6faf;
+
+}
+
+:host ::ng-deep .journal-header {
+  font: 25px 'Pacifico', Helvetica, sans-serif;
+  // color: #2b2b2b;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.3), 2px 2px 0px rgba(255,255,255,0.25);
+	margin: 0px;
+
+  display: inline-block;
+  vertical-align: middle;
+
+	color: #fff;
+
+	float: left;
+
+	-moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+
+	cursor: pointer;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

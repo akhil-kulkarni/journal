@@ -1,0 +1,42 @@
+
+<div class="login-wrapper">
+
+	<mat-toolbar color="primary" class="mat-elevation-z6 app-header">
+	  <span class="journal-header">Journal</span>
+
+	  <!-- This fills the remaining space of the current row -->
+	  <!-- <span class="example-fill-remaining-space"></span> -->
+
+	  <!-- <span>Right Aligned Text</span> -->
+	</mat-toolbar>
+
+	<div class="login-content">
+		<div class="login-btn-wrapper">
+			<div class="col-xl-offset-3 col-xl-6 col-lg-offset-3 col-lg-6 col-md-12
+			col-sm-12 col-xs-12">
+				<form [formGroup]="loginForm" novalidate (submit)="login()">
+					<mat-card style="padding: 8%; margin: 5%;" class="mat-elevation-z6">
+						<mat-card-title>Login!</mat-card-title>
+
+						<mat-card-content>
+							  <mat-form-field class="full-width">
+							    <input matInput placeholder="Email" type='email' formControlName="email"/>
+    							<mat-error *ngIf="!!loginForm.controls.email.errors && loginForm.controls.email.errors.required">Please enter a valid email id.</mat-error>
+							  </mat-form-field>
+
+								<mat-form-field class="full-width">
+							    <input matInput placeholder="Password" [type]="show ? 'text' : 'password'" formControlName="password">
+							    <mat-icon matSuffix (click)="show = !show" style="cursor: default;">{{show ? 'visibility' : 'visibility_off'}}</mat-icon>
+									<mat-error *ngIf="!!loginForm.controls.password.errors && loginForm.controls.password.errors.required" color="warn">Please enter a valid password.</mat-error>
+							  </mat-form-field>
+						</mat-card-content>
+						<mat-card-actions style="display: flex; align-items: center; justify-content: center; padding-bottom: 8px;">
+							<button mat-raised-button color="primary" style="width: 50px;" [disabled]="!loginForm.valid">Login</button>
+						</mat-card-actions>
+
+					</mat-card>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
