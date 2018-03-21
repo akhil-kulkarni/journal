@@ -8,7 +8,7 @@ import {
 	imports: [
 		CommonModule,
 		MatIconModule,
-		MatToolbarModule
+		MatToolbarModule,
 	],
 	declarations: [JnlHeaderComponent],
 	exports: [JnlHeaderComponent]

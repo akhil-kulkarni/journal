@@ -1,14 +1,70 @@
-.app-header {
+.jnl-hdr-wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.app-hdr-icn-grp {
+.jnl-hdr-search-wrap {
+	display: flex;
+	// align-items: center;
+	float: left;
+	// border: 1px solid black;
+	padding: 0;
+	margin: 0px 30px;
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.jnl-hdr-search-wrap input {
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 0px 15px;
+	color: white;
+	border-bottom: 2px solid rgba(255,255,255,.87);
+	background: rgba(0,0,0,0);
+	font-weight:normal;
+}
+.jnl-hdr-search-wrap input:focus {
+	outline: none;
+}
+::placeholder {
+	color: rgba(255,255,255,.87);
+}
+.jnl-hdr-icn-grp {
 	display: flex;
   align-items: center;
 }
 
-.app-hdr-icn-grp i {
+.jnl-hdr-icn-grp i {
 	padding: 0 10px;
 	cursor: pointer;
+}
+
+:host ::ng-deep .jnl-hdr-wrap {
+	height: 50px;
+	line-height: 50px;
+  text-align: center;
+}
+
+:host ::ng-deep .jnl-header {
+  font: 25px 'Pacifico', Helvetica, sans-serif;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.3), 2px 2px 0px rgba(255,255,255,0.25);
+	margin: 0px;
+  vertical-align: middle;
+	color: #fff;
+	float: left;
+	-moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-10deg, 0deg);
+	cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

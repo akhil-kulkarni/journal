@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
 
+import { AppCommonModule } from '../app-common/app-common.module';
+
 import {
 	MatButtonModule, MatInput, MatFormField, MatToolbarModule, MatCardModule,
 	MatInputModule, MatIconModule
@@ -23,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 		MatIconModule,
 		BrowserAnimationsModule,
 		NoopAnimationsModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		AppCommonModule
 	],
 	declarations: [LoginComponent]
 })
