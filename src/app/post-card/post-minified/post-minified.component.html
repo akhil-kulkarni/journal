@@ -1,41 +1,36 @@
-<div class="home-page-content" style="margin-top: 20px;">
+<div class="post-min-wrapper">
 	<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<mat-card class="mat-elevation-z6" style="padding: 0px; height: 150px;">
+		<mat-card class="mat-elevation-z6" class="post-card-min">
 
-
-			<div style=" width: 100%; height: 35px; padding: 10px 10px;">
-				<mat-card-title>Post Title!</mat-card-title>
+			<div class="post-dtls-wrapper">
+				<div class="auth-name">
+					<a> {{ authorName }} </a>
+				</div>
+				<div class="post-age">
+					<span class="post-content-type">{{ postContentType }}</span>
+					<span>{{ postAge }}</span>
+				</div>
 			</div>
 
-			<div class="content-wrapper">
-				<div class="fadeText">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+			<mat-card-content class="content-wrapper">
+				<div class="post-title">
+					{{ postTitle }}
 				</div>
-				<div style=" width: 65px; height: 65px; float: right; margin-right: 10px">
-					<img src="http://img.youtube.com/vi/W7qWa52k-nE/0.jpg" style="width: 100%; height: 100%; object-fit: cover"/>
+				<div style="height: 65px;">
+					<div class="fade-text">
+						{{ postContentText }}
+					</div>
+					<div class="content-img-wrapper">
+						<img [src]="postImgSrc" class="post-img-min"/>
+					</div>
 				</div>
+			</mat-card-content>
+
+			<div class="post-footer-cta-wrapper">
+				<div><a class='footer-cta-links'>Like</a></div>
+				<div><a class='footer-cta-links'>Share</a></div>
 			</div>
 
 		</mat-card>
 	</div>
 </div>
-
-<!-- <mat-card-title>Post Title!</mat-card-title> -->
-
-<!-- <mat-card-content>
-	<img/>
-	<div class="video-container">
-		<object data="http://www.youtube.com/embed/W7qWa52k-nE" width="452" height="250"></object>
-	</div>
-	<p style="margin-top: 10px; text-align: justify;">
-		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-	</p>
-	<div style="width: 100%;">
-		<div style="float: left;">dd:mm:yyyy hh:mm:ss</div>
-		<div style="float: right;">Author Name</div>
-	</div>
-</mat-card-content> -->
-
-			<!-- <mat-card-actions style="display: flex; align-items: center; justify-content: center; padding-bottom: 8px;">
-				<button mat-raised-button color="primary" style="width: 50px;" [disabled]="!loginForm.valid">Login</button>
-			</mat-card-actions> -->

@@ -1,20 +1,65 @@
-.content-wrapper {
+.post-dtls-wrapper {
 	width: 100%;
-	margin-top: 10px;
+	height: 35px;
+	padding: 0px 10px;
+	line-height: 2.4em;
 }
 
-.fadeText {
+.auth-name {
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.auth-name a {
+	text-decoration: none;
+	color: black;
+}
+
+.post-age {
+	float: right;
+	font-size: 1em;
+}
+
+ .post-min-wrapper {
+	 margin-top: 20px;
+	 height: 186px;
+ }
+
+.post-card-min {
+	padding: 0px;
+}
+
+.post-title {
+	width: 100%;
+	height: 35px;
+	font-size: 1.2em;
+	line-height: 2.2em;
+	font-weight: bold;
+}
+
+.post-title h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.content-wrapper {
+	width: 100%;
+	padding: 0px 10px;
+	height: 100px;
+}
+
+.fade-text {
 	position: relative;
 	font-size: 0.9em;
 	height: 2.7em;
 	overflow: hidden;
-	width: calc(100% - 110px);
+	width: calc(100% - 80px);
 	height: 65px;
 	text-align: justify;
 	float: left;
-	margin-left: 10px;
 }
-.fadeText:after {
+
+.fade-text:after {
   content: "";
   text-align: right;
   position: absolute;
@@ -22,5 +67,48 @@
   right: 0;
   width: 50%;
   height: 1.4em;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 85%);
+  background: linear-gradient(
+		to right,
+	rgba(255, 255, 255, 0),
+	rgba(255, 255, 255, 1) 85%
+	);
+}
+
+.content-img-wrapper {
+	width: 65px;
+	height: 65px;
+	float: right;
+}
+
+.post-img-min {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.post-footer-cta-wrapper {
+	width: 100%;
+	height: 35px;
+	font-size: 1em;
+	line-height: 2em;
+	padding: 0px 25px;
+}
+
+.post-footer-cta-wrapper :first-child {
+	float: left;
+}
+
+.post-footer-cta-wrapper :last-child {
+	float: right;
+}
+
+.post-content-type {
+	padding-right: 10px;
+	color: red;
+}
+
+.footer-cta-links {
+	text-decoration: none;
+	color: grey;
 }
