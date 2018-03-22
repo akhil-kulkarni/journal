@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
-import { MatCardModule } from '@angular/material';
+
+import { PostCardModule } from '../../post-card/post-card.module';
 
 import {
 	AppCommonModule
@@ -10,8 +11,8 @@ import {
 @NgModule({
 	imports: [
 		CommonModule,
-		MatCardModule,
-		AppCommonModule
+		AppCommonModule,
+		PostCardModule
 	],
 	declarations: [HomePageComponent]
 })

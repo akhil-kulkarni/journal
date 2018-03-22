@@ -1,0 +1,26 @@
+.content-wrapper {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.fadeText {
+	position: relative;
+	font-size: 0.9em;
+	height: 2.7em;
+	overflow: hidden;
+	width: calc(100% - 110px);
+	height: 65px;
+	text-align: justify;
+	float: left;
+	margin-left: 10px;
+}
+.fadeText:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 1.4em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 85%);
+}

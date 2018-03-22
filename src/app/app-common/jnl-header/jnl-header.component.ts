@@ -23,11 +23,17 @@ export class JnlHeaderComponent implements OnInit {
 		console.log('showHdrLogoIn: ' + showHdrLogoIn);
 		this.showHdrLogo = showHdrLogoIn;
 	}
+	get showHdrLogoIn(): boolean {
+		return this.showHdrLogo;
+	}
 
 	@Input()
 	set showSearchBarIn(showSearchBarIn: boolean) {
 		console.log('showSearchBarIn: ' + showSearchBarIn);
 		this.showSearchBar = showSearchBarIn;
+	}
+	get showSearchBarIn(): boolean {
+		return this.showSearchBar;
 	}
 
 	@Input()

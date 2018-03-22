@@ -14,31 +14,33 @@ import { HomePageComponent } from './main/home-page/home-page.component';
 import { CustomPreloadingStrategy } from './preloading-strategy';
 
 export const routes: Routes = [
-  {
-    path: '',
+	{
+		path: '',
 		pathMatch: 'full',
-    redirectTo: 'login'
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'main',
-    loadChildren: './main/main.module#MainModule'
-  }
+		redirectTo: 'login'
+	},
+	{
+		path: 'login',
+		component: LoginComponent
+	},
+	{
+		path: 'main',
+		loadChildren: './main/main.module#MainModule'
+	}
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
+	declarations: [
+		AppComponent
+	],
+	imports: [
 		LoginModule,
-    BrowserModule,
-		RouterModule.forRoot(routes, {preloadingStrategy: CustomPreloadingStrategy, enableTracing: true})
-  ],
-  providers: [CustomPreloadingStrategy],
-  bootstrap: [AppComponent]
+		BrowserModule,
+		RouterModule.forRoot(routes, {
+			preloadingStrategy: CustomPreloadingStrategy, enableTracing: true
+		})
+	],
+	providers: [CustomPreloadingStrategy],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
