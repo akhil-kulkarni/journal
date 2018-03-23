@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostExpandedComponent implements OnInit {
 
-	constructor() { }
+	authorName: string;
+	postContentType: string;
+	postAge: string;
+	postTitle: string;
+
+	constructor() {
+		this.authorName = 'Author Name';
+		this.postAge = '1m';
+		this.postContentType = 'video';
+		this.postTitle = 'Post Title!';
+	}
 
 	ngOnInit() {
 	}

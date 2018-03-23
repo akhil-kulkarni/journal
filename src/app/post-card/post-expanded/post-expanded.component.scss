@@ -1,3 +1,53 @@
+.post-dtls-wrapper {
+	width: 100%;
+	height: 35px;
+	padding: 0px 10px;
+	line-height: 2.4em;
+}
+
+.auth-name {
+	float: left;
+	font-size: 1em;
+	font-weight: bold;
+}
+.auth-name a {
+	text-decoration: none;
+	color: black;
+}
+
+.post-age {
+	float: right;
+	font-size: 1em;
+}
+
+.content-wrapper {
+	width: 100%;
+	padding: 0px 10px;
+	height: 100%;
+}
+
+// .post-body {
+// 	height: 65px;
+// }
+
+.post-title {
+	width: 100%;
+	height: 35px;
+	font-size: 1.4em;
+	line-height: 2.2em;
+	font-weight: bold;
+}
+
+.post-title h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.post-content-type {
+	padding-right: 10px;
+	color: red;
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
